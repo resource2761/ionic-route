@@ -1,0 +1,80 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+
+    <div class="logo_box">
+
+      <ion-row>
+
+        <ion-col size="12">
+          <img src="../../assets/images/logo.jpg" alt="" class="logo">
+          <div class="logo_text">
+            The Teachers Hub
+          </div>
+        </ion-col>
+
+      </ion-row>
+
+    </div>
+
+
+
+    <ion-radio-group allow-empty-selection="false" name="radio-group" [(ngModel)]="choice"
+      (ionChange)="radioGroupChange($event)" #radioGroup>
+
+      <ion-row>
+        <ion-col>
+          <ion-item (ionSelect)="radioSelect($event)" lines="none">
+
+            <ion-radio mode="md" item-left slot="start" name="bank" value="student"></ion-radio>
+            <ion-label>Student</ion-label>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item (ionSelect)="radioSelect($event)" lines="none">
+            <ion-label>Teacher</ion-label>
+            <ion-radio mode="md" item-left slot="start" name="razorpay" value="teacher"></ion-radio>
+          </ion-item>
+        </ion-col>
+
+      </ion-row>
+    </ion-radio-group>
+
+
+    <ion-row>
+
+
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">User ID</ion-label>
+          <ion-input type="text" [(ngModel)]="userid" required></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" maxlength="10" required></ion-input>
+        </ion-item>
+      </ion-col>
+
+
+      <ion-col size="12">
+        <div class="login_button" (click)="login()">
+          <div class="right">
+            <span>LOGIN</span>
+          </div>
+
+        </div>
+      </ion-col>
+
+
+    </ion-row>
+
+
+
+
+  </div>
+</ion-content>

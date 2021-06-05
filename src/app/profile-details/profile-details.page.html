@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab5" [text]="buttonText"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="section1">
+    <ion-row>
+
+      <ion-col size="12">
+        <div class="camera_box">
+          <ion-icon name="camera" (click)="select_media()"></ion-icon>
+          <img src="{{this.store_image}}" *ngIf="store_image">
+
+        </div>
+      </ion-col>
+
+
+    </ion-row>
+
+
+    <ion-row>
+
+      <ion-col size="12">
+        <div class="sample_text">{{fullname}}</div>
+        <div class="sample_text">{{category}}</div>
+        <div class="sample_text">{{experience}}</div>
+
+      </ion-col>
+
+    </ion-row>
+  </div>
+
+  <ion-row>
+
+    <ion-col size="12">
+      <div class="profile-details">Profile Details</div>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+
+    <ion-col size="6">
+      <div class="profile-head">Full Name</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{fullname}}</div>
+    </ion-col>
+
+
+
+    <ion-col size="6">
+      <div class="profile-head">Email Id</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{emailid}}</div>
+    </ion-col>
+
+
+    <ion-col size="6">
+      <div class="profile-head">Phone</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{phone}}</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head">Gender</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{gender}}</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head">State</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{state}}</div>
+    </ion-col>
+
+
+    <ion-col size="6">
+      <div class="profile-head">City</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{city}}</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head">Pincode</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{pincode}}</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head">Location</div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="profile-head-value">{{location}}</div>
+    </ion-col>
+
+
+    <ion-col size="6">
+        <div class="profile-head">Address</div>
+      </ion-col>
+  
+      <ion-col size="6">
+        <div class="profile-head-value">{{address}}</div>
+      </ion-col>
+
+      <ion-col size="6">
+          <div class="profile-head">Category</div>
+        </ion-col>
+    
+        <ion-col size="6">
+          <div class="profile-head-value">{{category}}</div>
+        </ion-col>
+
+
+        <ion-col size="6">
+            <div class="profile-head">Sub Category</div>
+          </ion-col>
+      
+          <ion-col size="6">
+            <div class="profile-head-value">{{sub_category}}</div>
+          </ion-col>
+  </ion-row>
+
+</ion-content>
